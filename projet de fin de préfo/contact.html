@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="Assets/rules/prefo.css" type="text/css" rel="stylesheet"  id="theme">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/img/LogoP.ico">
+    <script src="Assets/rules/prefo.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="liens">
+            <a href="index.html" id="logo"> <img src="Assets/img/logoP.png" alt="logo" id="imageTheme1"/><img src="Assets/img/logoP2.png" alt="logo" id="imageTheme2"/></a>
+            <div>
+                <div class="dropdown">
+                    <button class="navbutton">Orientation</button>
+                    <div class="navbutton_content">
+                        <a href="entreprises.html">Entreprise</a>
+                        <a href="interview.html">Interview</a>
+                        <a href="formation.html">Formation</a>
+                    </div>  
+                </div> 
+                <div class="dropdown">
+                    <button class="navbutton">Films</button>
+                    <div class="navbutton_content">
+                        <a href="documentaires.html">Documentaires</a>
+                        <a href="resume.html">Résumé</a>
+                        <a href="critique.html">Critique</a>
+                    </div>
+                </div>
+                    <a href="contact.html" id="future_php">Contact</a>
+            </div>
+        </nav>
+
+        <h1>Formation CF2M</h1>
+
+    </header>
+    <main>
+
+        <section>
+            <div id="centering_contact"><article>Contactez-moi</article></div>
+        </section>
+        <section>
+                <form action="Assets/rules/contact.php" method="post" id="mail_form">
+                    <div>  
+                        <label for="name">Nom:</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail">Adresse Mail:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <div>
+                        <label for="msg">Votre Message:</label>
+                        <textarea type="msg" name="user_msg" id="message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Envoyer le message</button>
+                    </div>
+                </form>
+        </section>
+    </main>
+    <footer>
+        <button onclick="toggleTheme()" id="switch">Switch</button>
+    </footer>
+
+
+
+</body>
+
+</html>
